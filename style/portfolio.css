@@ -171,7 +171,7 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url(/style/img/portfolio/thumbnails/webdev.jpg), url("https://photos.smugmug.com/WDI16/Patricks-Headshots/n-nKGxtS/i-8fxz9tt/0/416a8010/L/i-8fxz9tt-L.jpg");
+  background-image: url(/style/img/portfolio/thumbnails/webdev.jpg), url(/style/img/portfolio/thumbnails/PALheashot.jpg);
   background-position: left center, right center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -209,7 +209,7 @@ header.masthead p {
 
 @media (max-width: 450px){
   header.masthead{
-  background-image: url(/style/img/portfolio/thumbnails/webdev.jpg), url("https://photos.smugmug.com/WDI16/Patricks-Headshots/n-nKGxtS/i-8fxz9tt/0/416a8010/L/i-8fxz9tt-L.jpg");
+  background-image: url(/style/img/portfolio/thumbnails/webdev.jpg), url(/style/img/portfolio/thumbnails/PALheashot.jpg);
   background-size: 50vw 100vh, 50vw 100vh;
   background-position: left center, right center;
   }
