@@ -125,6 +125,7 @@ img::-moz-selection {
   background-color: transparent;
 }
 
+
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
@@ -170,12 +171,13 @@ img::-moz-selection {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
-  background-position: center center;
+  background-image: url(/style/img/portfolio/thumbnails/webdev.jpg), url("https://photos.smugmug.com/WDI16/Patricks-Headshots/n-nKGxtS/i-8fxz9tt/0/416a8010/L/i-8fxz9tt-L.jpg");
+  background-position: left center, right center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: 70vw 100vh, 30vw 100vh;
+  background-repeat: no-repeat;
 }
 
 header.masthead hr {
@@ -184,7 +186,15 @@ header.masthead hr {
 }
 
 header.masthead h1 {
+  color:  rgba(240, 95, 64, 0.9);
   font-size: 2rem;
+  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 header.masthead p {
@@ -194,6 +204,14 @@ header.masthead p {
 @media (min-width: 768px) {
   header.masthead p {
     font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 450px){
+  header.masthead{
+  background-image: url(/style/img/portfolio/thumbnails/webdev.jpg), url("https://photos.smugmug.com/WDI16/Patricks-Headshots/n-nKGxtS/i-8fxz9tt/0/416a8010/L/i-8fxz9tt-L.jpg");
+  background-size: 50vw 100vh, 50vw 100vh;
+  background-position: left center, right center;
   }
 }
 
@@ -215,8 +233,22 @@ header.masthead p {
   }
 }
 
-.project-box {
+
+.btn-social-icon{
+background-color: #55ACEE;
+width: 48px;
+height: 48px;
+
+  } 
+
+.btn-social-icon:hover, .btn-social-icon:focus, .btn-social-icon:active{
+  color: #fff;
+  background-color: #ee4b28 !important;
+}
+
+.skill-box {
   max-width: 400px;
+  border-radius: 50px;
 }
 
 .portfolio-box {
@@ -298,6 +330,17 @@ header.masthead p {
   padding: 1rem 2rem;
 }
 
+.btn-light{
+  background-color: #F05F40;
+  border-color: #F05F40;
+  color: white;
+}
+
+.btn-light:hover, .btn-light:focus,.btn-light:active, {
+  color: #fff;
+  background-color: #ee4b28 !important;
+}
+
 .btn-primary {
   background-color: #F05F40;
   border-color: #F05F40;
@@ -311,3 +354,4 @@ header.masthead p {
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
+
